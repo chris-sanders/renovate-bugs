@@ -1,0 +1,10 @@
+{
+  "baseBranches": ["prod"],
+  "enabledManagers": ["helm-values"],
+  "timezone": "America/Chicago",
+  "helm-values": {
+    "fileMatch": ["values-home.yaml$"],
+    "ignorePaths": ["**/values.yaml", "values.yaml"],
+    "pinDigests": true
+  }
+}
