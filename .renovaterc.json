@@ -4,7 +4,7 @@
   "timezone": "America/Chicago",
   "pinDigests": true,
   "helm-values": {
-    "fileMatch": [".*/values-home.yaml$"],
+    "fileMatch": ["values-home.yaml$"],
     "ignorePaths": ["**/values.yaml", "values.yaml"]
   }
 }
