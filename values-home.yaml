@@ -1,0 +1,28 @@
+renovate:
+    cronjob:
+      schedule: '0 0/2 * * *'
+      annotations: {}
+      labels: {}
+      concurrencyPolicy: ''
+      failedJobsHistoryLimit: ''
+      successfulJobsHistoryLimit: ''
+      jobRestartPolicy: Never
+    
+    image:
+      repository: renovate/renovate
+      tag: 24.42.0
+      pullPolicy: IfNotPresent
+    
+    existingSecret: 'renovate-env'
+
+    renovate:
+      # See https://docs.renovatebot.com/self-hosted-configuration
+      # "gitAuthor": "Renovate Bot <renovate@whitesourcesoftware.com>"
+      config: |
+        {
+          "platform": "github",
+          "autodiscover": "false",
+          "dryRun": false,
+          "printConfig": true,
+          "logLevel": "debug",
+        }
