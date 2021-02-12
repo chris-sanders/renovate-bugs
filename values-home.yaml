@@ -10,7 +10,7 @@ renovate:
     
     image:
       repository: renovate/renovate
-      tag: 24.42.0
+      tag: 24.42.0@sha256:48c0e4f6ad836519c163dea4cf980ea8ba4ddd9a7ff05914e53d1f0c8470d95d
       pullPolicy: IfNotPresent
     
     existingSecret: 'renovate-env'
